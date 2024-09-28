@@ -1,2 +1,32 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+
+<h1>{{title}} Rest API Project</h1>  
+
+
+<div style="display:flex; flex-direction: row;  align-items: center">
+ <div style="margin-right: 5px;"><h3>Rest Api link:</h3></div>   <a href="https://satellite-rest-api.vercel.app/" target="_blank">Satellite Data</a>
+</div>
+{{!-- <p>Types of {{title}}</p> --}}
+
+ <ul>
+    {{#data}}
+
+    <li>
+        <div>
+            <h2>
+       {{type}}
+        </h2>
+        </div>
+        <div>
+       <p>{{description}}</p> 
+        </div>
+        <div>
+            <img src="{{imageUrl}}"  style="border-radius: 30px; width: 20%; height:20%"/> 
+
+</div>
+        </li>
+
+   
+
+    {{/data}}
+</ul> 
